@@ -44,7 +44,7 @@ void push(int n) {
     */if(isFull()!=true)
     {
     s.st[s.i]=n;
-    s.i++;
+    s.i+1;
     }
 }
 int pop() {
@@ -54,7 +54,7 @@ int pop() {
     */
     if(isEmpty()!=true)
     {
-        s.i--;
+        s.i-1;
         return s.st[s.i];
     }
     else 
